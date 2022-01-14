@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- This is a sample form for job application at Voiedd inc. using form and input tags  -->
+    <!-- I have used a few of the old conpects which i learned earlier, like <p>, heading tag etc. -->
+    <title>Job Application Form</title>
+  </head>
+  <body>
+    <h2>MERN Stack Developer at Voiedd</h2>
+    <!-- <div> tag defines the division in html document -->
+    <div>
+      <p>
+        If you passionate about creating beautiful, modern and highly scalable
+        web and mobile applications, this is for you. Voiedd inc. invites you to
+        join its Web Developer's team.
+      </p>
+    </div>
+    <h3>Job Description</h3>
+    <h4>Responsibilities</h4>
+    <!-- This an unordered list of job discription. -->
+    <ul type="disk">
+      <li>
+        Ability to translate Wireframes and PSD Designs into functional web apps
+        using HTML5, AngularJS, React , Node.js, and Mongo
+      </li>
+      <li>
+        Work in a cross-functional team to deliver a complete user experience
+      </li>
+      <li>Write code that is cross-platform and cross-device compatible</li>
+      <li>Ability to wear many hats and learn new technologies quickly</li>
+      <li>Architect scalable web architectures</li>
+    </ul>
+    <h3>Qualifications</h3>
+    <h4>Experience</h4>
+    <!-- This an unordered list of qualification. -->
+    
+    <div>Fill the form below to register.</div>
+    <br />
+    <!-- <form> tag is used below  -->
+    <form action="tut8backend.txt">
+      <div>
+        <!-- Input type name  -->
+        Name: <input type="text" name="myTxt" />
+      </div>
+      <br />
+      <div>
+        <!-- Input type number  -->
+        Contact: <input type="number" name="num" />
+      </div>
+      <br />
+      <div>
+        <!-- Input type email  -->
+
+        Email: <input type="email" name="eml" />
+      </div>
+      <br>
+      <div>
+            DOB: <input type="date" name="dat">
+      </div>
+      <br>
+      <div>
+        Gender: Male <input type="radio" name="gen" /> Female
+        <input type="radio" name="gen" /> Other
+        <input type="radio" name="gen" />
+      </div>
+      <div>
+        <!-- Input type checkbox  -->
+
+        I have experience of more than 1 year:
+        <input type="checkbox" name="expyears" checked />
+      </div>
+      <br />
+      <!-- Input type number  -->
+
+      <div>Experience (in years): <input type="number" name="myExp" /></div>
+      <br />
+      <div>
+        <label for="hir">Why we should hire you?</label>
+        <br />
+        <!-- Textarea is used here -->
+        <!-- 
+            - cols attribute of textarea controls the width of textarea.
+            - row attribute of textarea controls the length of textarea.
+            - id connects the lable to the textarea.
+        -->
+        <textarea name="whyhire" cols="50" rows="10" id="hir"></textarea>
+      </div>
+      <br />
+      <div>
+        Preferable work location:
+        <!-- <Select> input type is used here 
+                - <option> tag is used to add values to select tag.
+                - selected in <option> can be used to pre select an option.
+             -->
+        <select name="loc">
+          <option value="qq">Toronto</option>
+          <option value="cn" selected>Canada</option>
+          <option value="hy">Houston</option>
+        </select>
+      </div>
+      <br>
+      <div>
+          Prefer to work:
+        <select name="typ">
+            <option value="ons">On-site</option>
+            <option value="rem" selected>Remote</option>
+            <option value="hy">Hybrid</option>
+          </select>
+      </div>
+      <br>
+      <div>
+            <input type="submit" value="Submit Now" >
+            <input type="Reset" value="Rest Form" >
+      </div>
+    </form>
+  </body>
+</html>
