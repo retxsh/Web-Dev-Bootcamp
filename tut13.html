@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tutorial</title>
+    <style>
+        p{
+            color: blueviolet;
+            background-color: chartreuse;
+        }
+        ul{
+            color: crimson;
+            background-color: darkgoldenrod;
+        }
+        </style>
+        <link rel="stylesheet" href="tut13.css">
+</head>
+<body>
+    <h3>Ways to add CSS stylesheet to the Markup(HTML)</h3>
+    <!-- This is Inline CSS -->
+    <!-- <p style="color: yellow; background-color: blue;"> -->
+    <!-- Inline CSS is priortized over other ways. -->
+    <p>There are three ways of adding CSS to the Markup:
+        <ul type="disk" style="background-color: rgb(41, 14, 85);">
+            <li><details>
+                <summary>Inline</summary>
+                Inline CSS allows you to apply a unique style to one HTML element at a time. You can assign the Inline CSS to a specific HTML element by using the style attribute with any CSS properties defined within it.
+            </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Internal</summary>
+                    Internal CSS is used to define a style tag for a single HTML page. It is defined in the  &lt; head &gt; section within a &lt; style &gt;  element.
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>External</summary>
+                    External CSS is mostly used when you want to make changes on multiple pages. It is an ideal condition because it facilitates you to change the look of the entire website by changing just one file. You can add the stylesheet in the &lt; head &gt; section using &lt; link &gt; tag.
+                </details>
+            </li>
+        </ul>
+    </p>
+    <div>
+        - &lt; ul &gt; is using inline CSS with style="background-color: rgb(153, 75, 61);". That's why it's priortized over &lt; ul &gt; in external CSS stylesheet.
+    </div>
+</body>
+</html>
