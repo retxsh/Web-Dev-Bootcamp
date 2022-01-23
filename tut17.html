@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fonts in CSS</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    p {
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 2em;
+    }
+    #FirstLine {
+      font-family: "Sedgwick Ave", cursive;
+    }
+    .Note {
+      font-style: italic;
+      font-weight: bold;
+    }
+  </style>
+  <body>
+    <h3>Font Properties in CSS</h3>
+    <div id="FirstLine">
+      We have learned about font and its properties in CSS. A few of then are
+      mentioned below.
+    </div>
+    <br />
+    <h3>Properties:</h3>
+    <div>
+      <ul type="disk">
+        <li>
+          <p>
+            <strong>CSS font-family:</strong> we use the font-family property to
+            specify the font of a text.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>CSS font-style:</strong> The font-style property specifies
+            the font style for a text.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>CSS font-size:</strong> The font-size property sets the size
+            of a font.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>CSS font-weight:</strong> The font-weight property sets how
+            thick or thin characters in text should be displayed.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>CSS line-height :</strong> The line-height property
+            specifies the height of a line.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <br />
+    <div class="Note">
+      Notes:
+      <br />
+      -The information is taken from
+      <a href="https://www.w3schools.com/cssref/pr_font_font.asp">w3schools</a>.
+      <br />
+      - The font used in first line is web font and it's source is
+      <a href="https://fonts.google.com/specimen/Sedgwick+Ave"
+        >fonts.google.com</a
+      >.
+      <br />
+      - Font used in the list elements is web-safe font.
+    </div>
+  </body>
+</html>
