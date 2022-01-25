@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Addind/Modifying Border and Background</title>
+    <style>
+      #PrimaryPara {
+        height: 100px;
+        width: 500px;
+        background-color: orange;
+        border: 2px solid green;
+        /* The other way of doing the above is:
+    border-color: green;
+    border-style: solid;
+    border-width: 2px;
+     */
+        border-radius: 10px;
+      }
+      #BorderMod {
+        height: 120px;
+        width: 520px;
+        background-color: rgb(218, 162, 171);
+        border-left: 2px solid rgb(255, 0, 0);
+        border-top: 3px solid rgb(0, 128, 0);
+        border-right: 4px solid rgb(255, 255, 0);
+        border-bottom: 5px solid rgb(255, 165, 0);
+        border-top-left-radius: 7px;
+        border-top-right-radius: 9px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 30px;
+      }
+      #ImageMod{
+        height: 250px;
+        width: 550px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        border-radius: 10px;
+        border-color: powderblue;
+        border-width: 6px;
+        border-style: ridge;
+        background-image: url('https://images.unsplash.com/photo-1494917279766-2fddce4f211b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80');
+        background-position: center center;
+        /* background-position can also be modified to - center right, center left, top center, top left, top right, bottom center, bottom left and bottom right. */
+        background-repeat: no-repeat;
+        /* no-repeat specifies that the backgrond image should not repeat, though it can be set to x-repeat and y-repeat to show repetition of the image in x-axis and y-axis, respectively. */
+      }
+      #Ending{
+          font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h3>Adding and Modifying Background and Borders</h3>
+    <div>
+      <p id="PrimaryPara">
+        Okay, so you can do many interesting thing with CSS and one of them is
+        adding borders and background. For example look at this paragraph
+        itself, it have a solid green border of 11px and orange background
+        color. The border radius of all edges is kept same i.e. 10px, But there
+        is more to it, you can modify each border and border-radius
+        individually. How? Let see.
+      </p>
+    </div>
+    <h3>Modifying Borders</h3>
+    <div>
+      <p id="BorderMod">
+        I mentioned in the previous paragraph that we can modify each border and
+        it's radius, individually. Take a look at this pink (rgb(218, 162, 171))
+        paragraph, it have all (top, bottom, left and right) borders different
+        pixels and colors. The border radius is of different pixels too.
+        <br />
+        Having a background color seems cool but do you know you can add image
+        in the background too? Let's see how it works.
+      </p>
+    </div>
+    <h3>Image as background</h3>
+    <div>
+      <p id="ImageMod">
+        Look at this paragraph, it have image as a background. Now the intresting part is, you can position image according to your will, you can repeat it in x-axis or y-axis. For example the position of current background image is; center center. Other than that, the border-style of this paragraph is ridge.
+      </p>
+    </div>
+
+    <div>
+        <p id="Ending">
+        
+            I had a lot of fun while creating this and I hope you will like it too. If you want to access the code I used to create this <a href="https://github.com/retxsh/Web-Dev-Bootcamp"><em>click here</em></a>.
+        </p>
+    </div>
+  </body>
+</html>
