@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model, Margin and Padding</title>
+    <style>
+        /* "*" is auniversal selector */
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: #f3c0c0;
+        }
+        .container{
+            border-color: #535360;
+            background-color: rgb(192 177 221);
+            border-width: 4px;
+            border-style: solid;
+            border-radius: 20px;
+            
+            /* padding: 12px; Same padding on every side */
+
+            /* Padding of different values can be added in two ways: */
+            /* 1st Way: Listing every side individually
+            padding-top: 10px;
+            padding-right: 8px;
+            padding-bottom: 6px;
+            padding-left: 20px; */
+
+            /* 2nd Way: By padding: top right bottom left;  
+            padding: 14px 12px 10px 20px; */
+
+            /* Padding: y-axis(top/bottom) x-axis(right/left); */
+            padding: 20px 12px;
+
+            /* margin: 40px; Same margin on every side */
+
+            /* margin of different values can be added in two ways: */
+
+            /* 1st Way: Listing every side individually
+            margin-top: 10px;
+            margin-right: 8px;
+            margin-bottom: 6px;
+            margin-left: 20px; */
+
+            /*2nd Way: By margin: top right bottom left; */
+            margin: 29px 55px 17px 36px;
+
+            /* margin: y-axis(top/bottom) x-axis(right/left); */
+            /* margin: 20px 12px; */
+        
+            width: 720px;
+        }
+        .PrimaryHeading{
+           margin-left: 20px ;
+           margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h3 class="PrimaryHeading">Margin and Padding</h3>
+    <div class="container">
+        <p>
+            Today I learned about margin, padding, border and box model in the CSS layout.
+            <br>
+            Padding is the distance between the content and the border. The fun part is you can give padding of same value to every side (top, right, bottom and left) or you can give it base on the axis i.e. x-axis(left and right) and y-axis(top and bottom) or you you can give different value to each and every side individually. 
+        </p>
+    </div>
+    <div class="container">
+        <p>
+            Now as we know the ways to adjust padding, let's move on to work with the margin. Margin in simple words is used to create space arounf elements, outside the border. But what about the ways to adjust the margins?
+            <br>
+            If you know how to adjust padding, your problem is solved because you have to use the same commands, just replace padding with margin in the stylesheet command.
+        </p>
+    </div>
+    <div class="container">
+        <p>
+            I hope adjusting padding and margin is all clear by. Now, there is one issue, when we specify the width in stylesheet and if we adjust the padding then it's widht also changes. If you don't want this to happen, you can avoid it by using, box-sizing: border-box;
+        </p>
+    </div>
+
+    <div class="container">
+        Want to acces the code I used to create this? <a href="https://github.com/retxsh/Web-Dev-Bootcamp">click here</a>. 
+    </div>
+</body>
+</html>
