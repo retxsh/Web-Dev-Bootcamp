@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Navigation</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped&display=swap" rel="stylesheet">
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+
+        background-color: #242582;
+        font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+      }
+      .CodeList{
+        background-color: #f64c72;
+        border-radius: 6px;
+        color: white;
+        padding: 8px 36px;
+        margin: 10px 36px ;
+        width: 1000px;
+      }
+      .CodeList li a{
+          color: white;
+        text-decoration: none;
+      }
+      .CodeList li a:hover{
+        background-color: #eb98aa;
+        color: #242582;
+        border-radius: 6px;
+        padding: 3px;
+
+      }
+      .contBoundary {
+        background-color: #2f2fa2;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;        
+        color: white;
+        padding: 1px 18px;
+        margin: 10px auto;
+        width: 1325px;
+      }
+      .navigbar {
+        background-color: #f64c72;
+        border-radius: 20px;
+      }
+      .navigbar input {
+        border: 2px solid #242582;
+        border-radius: 19px;
+        margin: 6px 5px;
+        padding: 6px 16px;
+      }
+
+      .navigbar li {
+        float: left;
+        list-style: none;
+        padding: 12px 20px;
+        margin: 6px 15p;
+      }
+      .navigbar li a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        margin: 8px 8px;
+      }
+      .navigbar li a:hover {
+        background-color: #2f2fa2;
+        color: #17172c;
+        border-radius: 10px;
+        border: 1px solid #553d67;
+        padding: 0px 10px;
+      }
+      .navigbar ul {
+        overflow: auto;
+      }
+      .Plink{
+          text-decoration: none;
+          color: rgb(178, 196, 230);
+      }
+      .search {
+        float: right;
+        padding: 4px 50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navigbar">
+        <ul>
+          <li>
+            <a href="https://github.com/retxsh" target="_blank"> GitHub Home</a>
+          </li>
+          <li>
+            <a href="https://github.com/retxsh/Web-Dev-Bootcamp" target="_blank"
+              >Web Development</a
+            >
+          </li>
+          <li>
+            <a href="https://twitter.com/Voiedd" target="_blank">Twitter</a>
+          </li>
+          <div class="search">
+            <input type="text" name="search" id="search" placeholder="Search" />
+          </div>
+        </ul>
+      </nav>
+      <div class="contBoundary">
+        <h3>Web Development Tutorial by Voied</h3>
+        <p>
+            Hi! I am Voied, and I am an aspiring web developer. So far, I have worked on basic HTML and CSS and its been fun. Today I learned about creating a <em>navigation menu</em> in HTML and I styled it using CSS. I have created a few small projects using HTML and CSS, you can acces them from my <a class="Plink" href="https://github.com/retxsh/Web-Dev-Bootcamp" target="_blank">GitHub</a>.
+        </p>
+        <p>
+            You can access a few of the codes from the list below:
+            <ul class="CodeList" type="disk">
+                <li> <a href="https://github.com/retxsh/Web-Dev-Bootcamp/commit/caef36d1c7ad93bd6f7397fa16954d455de29ba6" target="_blank">Inline and Block elements.
+                </a> </li>
+                <li><a href="https://github.com/retxsh/Web-Dev-Bootcamp/blob/master/tut13.html" target="_blank">Ways to add CSS to Markup</a></li>
+                <li><a href="https://github.com/retxsh/Web-Dev-Bootcamp/commit/696471c7c900087128196b21911cc8aa427e48eb" target="_blank">Float and Clear command in CSS
+                </a></li>
+                <li><a href="https://github.com/retxsh/Web-Dev-Bootcamp/commit/b44862d2b0bbc9f33f464a3d19a24940a626f119" target="_blank">Margin, Padding and Box Model in CSS</a></li>
+                <li> <a href="https://github.com/retxsh/Web-Dev-Bootcamp/commit/f25afd817ffb6f1a946c693251d0b9eeaf578f70">Campus Ambassador Form using Pseudo Selectors, Styling Links and Buttons</a> </li>
+            </ul>
+        </p>
+        <p>
+            Want to access other codes? Visit my  <a class="Plink" href="https://github.com/retxsh/Web-Dev-Bootcamp" target="_blank">GitHub</a>, and you can connnect with me on  <a class="Plink"href="https://twitter.com/Voiedd" target="_blank">Twitter</a> as well. 
+        </p>
+      </div>
+    </header> 
+  </body>
+</html>
