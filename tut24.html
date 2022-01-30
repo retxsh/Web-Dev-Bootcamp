@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dispaly Properties</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+      background-color: #1A374D
+    }
+    h2{
+        text-align: center;
+        margin: 12px auto;
+        color: white;
+        font-family: 'Source Serif 4', sans-serif;
+    }
+    header{
+        border: 0px solid ;
+        
+        margin: auto;
+        width: 400px;
+    }
+    img{
+        border-radius: 30px;
+        display: block;
+        margin: 3px auto;
+        width: 49px;
+    }
+    .list{
+        background-color: #406882;
+        margin: 5px auto;
+        width: 611px;
+        padding: 24px 41px;
+        border-radius: 12px;
+    }
+    .main{
+       
+        border-radius: 30px;
+        color: white;
+        margin: 33px 39px;
+        padding: 38px 36px;
+        font-size: 22px;
+    }
+    .summary{
+        border-radius: 30px;
+        background-color: #406882;
+        display: inline-block;
+        padding: 4px 22px;
+        margin: 5px;
+        width: 49%;
+    }
+    a{
+        text-decoration: none;
+        color: rgb(218, 218, 218);
+    }
+    a:hover{
+        color: grey;
+    }
+</style>
+<body>
+    <header>
+        <img src="https://pbs.twimg.com/profile_images/1487036049108860934/JuEQExm5_400x400.jpg" alt="Voied">
+        <h2>Hi! If you noticed, it's a webpage ...</h2>
+    </header>
+    <div class="main">
+        <p id="intro">
+            Hi, today I worked on <strong>display property</strong> in CSS. It was fun. You can check out the code used on my <a href="https://github.com/retxsh/Web-Dev-Bootcamp" target="_blank">GitHub</a>.
+           <br>
+           I have also created a few other small projects using basic HTML and CSS, some of then are:
+           <ul class="list" type="disk">
+            <li><a href="https://github.com/retxsh/Web-Dev-Bootcamp/commit/a89c82ecd17fc396e7e24da6785cbbd7a74dbf7a">Margin, Padding and Box Model in CSS.</a> </li>
+            <li><a href="https://github.com/retxsh/Web-Dev-Bootcamp/commit/13ee20874e0c13f5b21d538ce88b946a6fe4b3f9" target="_blank">Adding/Modifying Border and Background.
+            </a></li>
+            <li><a href="https://github.com/retxsh/Web-Dev-Bootcamp/commit/f25afd817ffb6f1a946c693251d0b9eeaf578f70" target="_blank">Learned about Pseudo Selectors, Styling Links and Buttons.</a></li>
+           </ul>
+        </p>
+
+        <div class="summary">
+            <h3>Margin, Padding and Box Model in CSS</h3>
+            <p>
+                The CSS margin properties are used to create space around elements, outside of any defined borders.
+            <br>
+            With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).
+            </p>
+            <p>
+                The CSS padding properties are used to generate space around an element's content, inside of any defined borders.
+            <br>
+            With CSS, you have full control over the padding. There are properties for setting the padding for each side of an element (top, right, bottom, and left).
+            </p>
+            <p>
+                In CSS, the term "box model" is used when talking about design and layout.
+            <br>
+                The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. 
+            </p>
+        </div>
+        <div class="summary">
+            <h3>Adding/Modifying Border and Background.</h3>
+            <p>
+                The border-style property specifies what kind of border to display.
+<br>
+The border-style property can have from one to four values (for the top border, right border, bottom border, and the left border).
+            </p>
+            <ul>
+                <li>dotted - Defines a dotted border</li>
+                <li>dashed - Defines a dashed border</li>
+                <li>solid - Defines a solid border</li>
+                <li>double - Defines a double borde</li>
+                <li>groove - Defines a 3D grooved border. The effect depends on the border-color value</li>
+                <li>ridge - Defines a 3D ridged border. The effect depends on the border-color value</li>
+            </ul>
+        </div>
+        <div class="summary">
+            <h3>Pseudo Selectors, Styling Links and Buttons.</h3>
+            <p>
+                A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s). For example, :hover can be used to change a button's color when the user's pointer hovers over it.
+                <br>
+                When styling links, it's important to understand how to make use of pseudo-classes to style their states effectively. It's also important to know how to style links for use in common interface features whose content varies, such as navigation menus and tabs. We'll look at both these topics in this article.
+            </p>
+        </div>
+       <div class="summary">
+           <h3>My Socials</h3>
+           Want to acces to code I used, <a href="https://github.com/retxsh/Web-Dev-Bootcamp" target="_blank">click here</a>.
+           <br>
+           You can connect with me on <a href="https://twitter.com/Voiedd" target="_blank">Twitter</a> too.
+       </div>
+    </div>
+</body>
+</html>
