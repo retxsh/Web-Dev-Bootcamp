@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position Property in CSS</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      a {
+        color: rgb(110, 110, 110);
+        text-decoration: none;
+      }
+      a:hover {
+        color: rgb(37, 34, 34);
+      }
+      .box {
+        border-radius: 30px;
+        display: inline-block;
+        width: 32%;
+        margin: 19px 3px;
+        padding: auto auto;
+        height: 320px;
+        border: 2px solid grey;
+      }
+      .container {
+        background-color: #a1b57d;
+        border: 2px solid #7b95a1;
+        border-radius: 20px;
+        margin: 4px auto;
+        padding-left: 20px;
+        width: 1322px;
+        height: 3444px;
+      }
+      h3 {
+          color: rgb(0, 0, 0);
+        padding: 3px 8px;
+        border-radius: 20px;
+        border: 2px solid white;
+        margin:6px auto;
+        width: 110px;
+        text-align: center;
+      }
+      #first {
+        background-color: #d3eca7;
+        position: static;
+      }
+      #second {
+        background-color: #b33030;
+        position: relative;
+        top: 330px;
+        left: 1px;
+      }
+      #third {
+        background-color: #19282f;
+        position: sticky;
+        top: 20px;
+        right: 50px;
+      }
+      #fourth {
+        background-color: rgb(112, 167, 212);
+        position: fixed;
+        right: 35px;
+        top: 565px;
+        width: 400px;
+        height: 90px;
+      }
+      #fifth {
+        background-color: #91c483;
+        position: absolute;
+        left: 35px;
+        top: 666px;
+      }
+      p {
+        background-color: rgb(196, 196, 196);
+        border-radius: 20px;
+        margin: 0px 10px;
+        padding: 4px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="first">
+        <h3>Static</h3>
+        <p>
+          HTML elements are positioned static by default.
+          <br />
+          Static positioned elements are not affected by the top, bottom, left,
+          and right properties.
+          <br />
+          An element with position: static; is not positioned in any special
+          way; it is always positioned according to the normal flow of the page.
+        </p>
+      </div>
+      <div class="box" id="second">
+        <h3>Relative</h3>
+        <p>
+          An element with position: relative; is positioned relative to its
+          normal position.
+          <br />
+          Setting the top, right, bottom, and left properties of a
+          relatively-positioned element will cause it to be adjusted away from
+          its normal position. Other content will not be adjusted to fit into
+          any gap left by the element.
+        </p>
+      </div>
+      <div class="box" id="third">
+        <h3>Sticky</h3>
+        <p>
+          An element with position: sticky; is positioned based on the user's
+          scroll position.
+          <br />
+          A sticky element toggles between relative and fixed, depending on the
+          scroll position. It is positioned relative until a given offset
+          position is met in the viewport - then it "sticks" in place (like
+          position:fixed).
+        </p>
+      </div>
+      <div class="box" id="fourth">
+        <h3>Fixed</h3>
+        <p>
+          <a href="https://github.com/retxsh/Web-Dev-Bootcamp" target="_blank">
+            Click here to access the code.</a
+          >
+        </p>
+      </div>
+      <div class="box" id="fifth">
+        <h3>Absolute</h3>
+        <p>
+            An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+            <br>
+            However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
