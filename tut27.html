@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and Z-Index</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            width: 160px;
+            height: 160px;
+        }
+        #box1{
+            /* z-index:
+            - Only works for elements having non-static position.
+            - Specifies the stack order of element.
+            - Element having greater z-index will be shown over the element having less z-index compared to it.*/
+
+            position: relative;
+            top: 50px;
+            z-index: -1;
+            background-color: rgb(255 0 0 / 80%);
+        }
+        #box2{
+            position: relative;
+            /* box2(z-index: 2) have greater z-index than box1(z-index:-1) that's why it's above box1. */
+            z-index: 2;
+            background-color: rgb(0 128 0 / 80%);
+        }
+        #box3{
+            /* visibility: hidden; will hide the element but the element will still occupy space i.e. it remains in the normal flow of document.  */
+            visibility: hidden;
+            background-color: blue;
+        }
+        #box4{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- .box2#box$*4 is used to obtain 4 <div> of class box and id box(1-4). -->
+        <h1>Visibility and Z-Index in CSS</h1>
+   <div class="box" id="box1">
+
+   </div>
+   <div class="box" id="box2">
+
+   </div>
+   <div class="box" id="box3">
+
+   </div>
+   <div class="box" id="box4">
+
+   </div>
+</body>
+</html>
