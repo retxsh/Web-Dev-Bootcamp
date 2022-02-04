@@ -65,28 +65,44 @@
 
             align-items: stretch;
             - stretches the flex item vertically to fill the container. */
-            
       }
       .item {
         background-color: chocolate;
         border: 2px solid red;
         width: 100px;
-        margin: 3px;
+        margin: 10px;
         padding: 3px;
         height: 100px;
       }
-      #item1{
-            /* Flex Properties for flex items  */
+      #item1 {
+        /* Flex Properties for flex items  */
 
-            /* order: Specifies the order of the flex item. Higher the order, later the itme appears.
+        /* order: Specifies the order of the flex item. Higher the order, later the itme appears.
             order: 2; */
-            /* flex-grow: 2;
+
+        /* flex-grow: 2;
             flex-shrink: 3; */
       }
-      #item2{
-          flex-basis:160px;
-          /* when flex-direction is set to row; flex-basis: will control width.
-             when flex-direction is set to column; flex-basis: will control height. */
+      #item2 {
+        flex-basis: 160px;
+
+        /* when flex-direction is set to row; flex-basis:  will control width.
+           when flex-direction is set to column; flex-basis: will control height. */
+
+      }
+      #item3 {
+        /* flex: shorthand property to set flex-grow, flex-shrink and flex-basis.
+            Syntax- flex: flex-grow flex-shrink flex-basis;
+            - flex: 2 6 250px;
+             
+            align-self: center;
+            - center the alignment of one of the item inside the flexbox. */
+            
+            align-self: flex-end;
+        /*  - aligns one of the item inside the flexbox to the end. */
+             
+        /* align-self: flex-start;
+            - aligns one of the item inside the flexbox to the start. */ 
       }
     </style>
   </head>
