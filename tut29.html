@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Size units</title>
+    <style>
+        html{
+        /* Default font-size is 16px. */
+        font-size: 18px;
+        }
+        .container{
+            /* width:400px;
+            height: 344px; */
+            /* viewport height (VW), works like the percentage unit. Ex: 10vh = 10% of entire visible screen height.  */
+            height: 90vh;
+            /* viewport width (VW), works like the percentage unit. Ex: 10vw = 10% of entire visible screen width.  */
+            width: 80vw;
+            font-size: 12px;
+            border :2px solid red;
+        }
+    h1{
+        text-align: center;
+    }
+    #first{
+            /* border: 2px solid pink; */
+            /* em unit multiplies the font-size of parent class to the em value: n em = n*px */
+            font-size: 3em;
+            padding: 2em;
+    }
+    #second{
+        /* REM unit depends on the root element [the HTML element]. n rem = n*px  */
+        font-size: 2rem;
+        padding: 2rem;
+        
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">This is first heading</h1>
+        <h1 id="second">This is second heading</h1>
+        <h1 id="third">This is third heading</h1>
+    </div>
+</body>
+</html>
