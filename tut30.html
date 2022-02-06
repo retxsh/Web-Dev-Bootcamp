@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Media Query</title>
+    <style>
+      .item {
+        font-size: 2rem;
+        border: 2px solid red;
+        display: none;
+        height: 100vh;
+      }
+      h1{
+        text-align: center;
+
+      }
+
+      /* @media query executes a block of CSS properties when certain condition is true.  */
+
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        #item1 {
+          display: block;
+          background-color: red;
+          text-align: center;
+        }
+      }
+      @media only screen and (min-width: 481px) and (max-width: 768px) {
+        #item2 {
+          display: block;
+          background-color: green;
+          color: white;
+          font-size: 40px;
+          text-align: center;
+        }
+      }
+      @media only screen and (min-width: 769px) and (max-width: 1024px) {
+        #item3 {
+          display: block;
+          background-color: blue;
+          color: white;
+          font-size: 45px;
+          text-align: center;
+        }
+      }
+      @media only screen and (min-width: 1025px) and (max-width: 1200px) {
+        #item4 {
+          display: block;
+          background-color: yellow;
+          font-size: 50px;
+          text-align: center;
+        }
+      }
+      @media only screen and (min-width: 1201px) {
+        #item5 {
+          display: block;
+          background-color: purple;
+          color: white;
+          font-size: 55px;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+      <h1>Using @media Query</h1>
+    <div class="item" id="item1">It's a Mobile devices.</div>
+    <div class="item" id="item2">It's an iPad or a Tablet.</div>
+    <div class="item" id="item3">It's a Small Screen/Laptop.</div>
+    <div class="item" id="item4">It's a large Screen.</div>
+    <div class="item" id="item5">It's a Wide Screen.</div>
+  </body>
+</html>
