@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute & nth child pseudo Selectors</title>
+    <style>
+        h1{
+            text-align: center;
+            color: green;
+        }
+
+        h2{
+            text-align: center;
+            color: rgb(61, 141, 61);
+        }
+
+        .content-para{
+            margin: 3px 5px;
+            background-color: green;
+            padding: 3px;
+        }
+
+        .command{
+            display: block;
+            width: 320px;
+            margin: 10px auto;
+            color: white;
+            background-color: #1a501a;
+            text-align: center;
+            padding: 3px;
+        }
+
+        input{
+            display: block;
+        }
+
+        /* Attribute pseudo selectors */
+
+        input[type='text']{
+            border: 1px solid black;
+        }
+        input[type='email']{
+            border: 1px solid blue;
+        }
+
+        a[target]{
+            text-decoration: none;
+        }
+        .att-ex{
+            display: block;
+            width: 323px;
+            margin: auto;
+        }
+
+        ul{
+            display: block;
+            width: 850px;
+            margin: 5px auto;
+        }
+
+        /* nth-child selector */
+
+        li:nth-child(3n+3){
+            color: blue;
+        }
+        li:nth-child(even){
+            color: rgb(107, 107, 202);
+        }
+    </style>
+</head>
+<body>
+    <h1>Attribute &amp; nth Child Element Selectors</h1>
+
+    <div>
+        <p class="content-para">
+            Let's talk about Attribute &amp; nth Child Element Selectors.
+            Attribute Selectors are used to select element with a specific attribute. For example, suppose there's a form having multiple input tags of various attributes like type, email, date etc. Now, if you want to style &lt;input&gt; tag have type="text", specifically.
+        </p>
+        <p class="command">
+
+            Command: input[type='type'] &lcub; <br>
+                /CSS Code Block/
+            &rcub;
+        </p>
+        <p class="content-para">
+            nth Child Element Selectors are used to match every element i.e. the nth child, regardless of type of its parent. n: a number, a keyword or a formula. For example, suppose there's an unordered list with 10 list items. Now, we can target nth child in many ways like, li:nth-child(3) /will target third element in the list, li:nth-child(3n+3) /will target every third element of the list/, li:nth-child(even) /will target list items at even place/, etc.
+        </p>
+        <p class="command">
+            Command: li:nth-child(number) &lcub; <br>
+            /CSS Code Block/
+            &rcub;
+        </p>
+    </div>
+
+    <h2>Attribute Selectors</h2>
+    <div class="att-ex">
+        <form action="#">
+            Name: <input type="text" placeholder="Enter name">
+            Email: <input type="email" placeholder="Enter email" >
+            <input type="submit" value="Submit Now">
+        </form>
+    </div>
+    <h2>nth Child Selectors</h2>
+    <ul type="square">
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ratione molestiae tenetur eligendi error facilis molestias mollitia, temporibus nisi in? Incidunt odit dignissimos dicta, reiciendis voluptatum ex soluta quia. Beatae. </li>
+        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, tenetur.</li>
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam quo perferendis quos natus cumque culpa architecto odio reprehenderit, optio consequatur dicta est modi deleniti corrupti, ducimus quibusdam maiores doloremque impedit minima unde reiciendis molestias iure? Quam voluptatibus fugiat sint rem?</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia vero repellat deleniti accusamus omnis illum.</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi temporibus, consequuntur, culpa voluptate atque pariatur eaque omnis perspiciatis non distinctio cumque ex iste cum numquam commodi praesentium aut. Autem, repudiandae.</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, magnam.</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque, quia facilis officiis eveniet expedita doloribus nihil mollitia voluptates maxime molestiae sed quisquam? Fuga, quibusdam quam.</li>
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, in. Iste repudiandae fuga itaque, quia nesciunt magnam! Aspernatur omnis fugiat consectetur pariatur autem obcaecati repellat officiis aliquam repellendus id quasi, beatae quis impedit modi delectus.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eaque officiis magnam dicta vitae voluptatibus, dolores blanditiis, repudiandae eos at ea autem! Autem exercitationem dolores illo rem reiciendis!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus incidunt ipsum et obcaecati repellendus commodi quasi autem ipsa perspiciatis atque quisquam aperiam corrupti, iste earum.</li>
+    </ul>
+    <p>Click <a href="https://github.com/retxsh/Web-Dev-Bootcamp" target="_blank">here</a> to access the code.</p>
+    <p>Click here to connect with me on<a href="https://twitter.com/retxsh_">Twitter</a>.</p>
+    </body>
+</html>
