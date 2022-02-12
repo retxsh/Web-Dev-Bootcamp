@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Shadow and Text-Shadow</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .container{
+            display: flex;
+        }
+
+        .card{
+            border: 2px solid firebrick;
+            padding: 10px 8px;
+            margin: 8px 5px;
+            
+            /* Syntax of box-shadow: none|h-offset v-offset blur-radius spread-radius color |inset|initial|inherit; */
+            
+            /* box-shadow: 10px 14px green;  box-shadow: h-offset v-offset color; */
+            /* box-shadow: 3px 5px 10px palevioletred;  box-shadow: h-offset v-offset blur-radius color; */
+            /* box-shadow: 50px -6px 129px 52px rgb(95 158 160 / 51%); box-shadow: h-offset v-offset blur-radius spread-radius color; */
+            /* box-shadow: inset 3px 10px rebeccapurple; inset changes the shadow from an outer shadow (outset) to an inner shadow */
+            
+            /* to add multiple box-shadow.  */
+            box-shadow: 3px 4px 52px salmon, 8px 16px olive;
+            
+        }
+        
+        .card h2{
+            /* Syntax of text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit; */ 
+
+            /* text-shadow: 3px -1px green; text-shadow: h-shadow v-shadow color; */
+            
+            /* text-shadow: h-shadow v-shadow blur-radius color; */
+            text-shadow: -2px 3px 7px slateblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Box-Shadow & Text-Shadow</h1>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>Client</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex facere impedit quibusdam suscipit dicta velit. Eum dolor vitae repudiandae placeat laboriosam qui aperiam. Minus excepturi quibusdam nobis fugiat officia fugit quis odio animi possimus!</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>Home</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex facere impedit quibusdam suscipit dicta velit. Eum dolor vitae repudiandae placeat laboriosam qui aperiam. Minus excepturi quibusdam nobis fugiat officia fugit quis odio animi possimus!</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>Contact</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex facere impedit quibusdam suscipit dicta velit. Eum dolor vitae repudiandae placeat laboriosam qui aperiam. Minus excepturi quibusdam nobis fugiat officia fugit quis odio animi possimus!</p>
+        </div>
+    </div>
+</body>
+</html>
