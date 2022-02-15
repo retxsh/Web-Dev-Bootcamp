@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creating Animations & Keyframes</title>
+    <style>
+      .container {
+        /* width: 100vw;
+            display: flex; */
+        background-color: aquamarine;
+      }
+      .box {
+        background-color: blue;
+        width: 200px;
+        height: 200px;
+        position: relative;
+        /* animation-name: basic; name of the animation */
+        animation-name: basic1;
+        animation-duration: 5s; /* duration of one animation cycle. */
+        animation-iteration-count: 3; /* number of times animation will run. */
+        animation-fill-mode: forwards; /* The animation-fill-mode property specifies a style for the element when the animation is not playing (before it starts, after it ends, or both). */
+        animation-timing-function: ease-in; /* animation-timing-function specifies the speed curve of an animation. */
+        /* animation-direction: reverse; */  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .box p{
+        display: block;
+      }
+      
+      @keyframes basic1 {
+        0% {
+          top: 0px;
+          left: 200px;
+          background-color: antiquewhite;
+        }
+        25% {
+          top: 200px;
+          left: 200px;
+          background-color: orange;
+        }
+        75% {
+          top: 200px;
+          left: 0px;
+          background-color: palegreen;
+        }
+        100% {
+          top: 0px;
+          left: 0px;
+          background-color: palevioletred;
+        }
+      }
+
+      @keyframes basic {
+        from {
+          width: 200px;
+        }
+        to {
+          width: 1300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <p>I am animated.</p>
+      </div>
+    </div>
+  </body>
+</html>
